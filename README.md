@@ -8,9 +8,9 @@ This is a template for open and freely licensed texts that delivers appealing, a
 
 With every save (commit) the following documents are generated:
 
-* [Ebook](https://mirjan-hoffmann.github.io/teststructure2/document.epub)
-* [PDF](https://mirjan-hoffmann.github.io/teststructure2/document.pdf)
-* [HTML](https://mirjan-hoffmann.github.io/teststructure2/index.html)
+* [Ebook](https://mirjan-hoffmann.github.io/teststructure/document.epub)
+* [PDF](https://mirjan-hoffmann.github.io/teststructure/document.pdf)
+* [HTML](https://mirjan-hoffmann.github.io/teststructure/index.html)
 
 # Re-use
 
