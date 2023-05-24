@@ -1,0 +1,6 @@
+output:
+  - format: asciidoc
+  - format: epub
+  - format: html
+  - format: pdf
+generate_landingpage: true
