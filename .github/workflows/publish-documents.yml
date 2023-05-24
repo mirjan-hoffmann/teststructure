@@ -45,11 +45,8 @@ jobs:
           name: prepared-data
       - run: |
           ls -l
-          pandoc title.txt merged-document-prepared.md -f markdown -t epub3 -s -o $OUTPUT_FILENAME.epub --metadata pagetitle="$GITHUB_REPOSITORY" --webtex
-          pandoc title.txt merged-document-prepared.md -f markdown -t latex --request-header User-Agent:"$GITHUB_REPOSITORY ($GITHUB_SERVER_URL/$GITHUB_REPOSITORY)" -s -o $OUTPUT_FILENAME.pdf --metadata pagetitle="$GITHUB_REPOSITORY" --webtex -V linkcolor:blue
-          pandoc title.txt merged-document-prepared.md -f markdown -t html -s -o $OUTPUT_FILENAME.html --metadata pagetitle="$GITHUB_REPOSITORY" --include-in-header=metadata.json --katex --css pandoc.css
-          pandoc title.txt merged-document-prepared.md -f markdown -t asciidoc -s -o $OUTPUT_FILENAME.asc --metadata pagetitle="$GITHUB_REPOSITORY" --webtex
-          pandoc title.txt merged-document-prepared.md -f markdown -t html -s -o index.html --metadata-file metadata.yml --metadata pagetitle="$GITHUB_REPOSITORY" --include-in-header=metadata.json --katex --css pandoc.css --template .template-landingpage.html --toc -V toc-title=Contents -V document-filename=$OUTPUT_FILENAME
+          ./pandoc-generate.sh
+          rm pandoc-generate.sh
           mkdir .public
           cp -r * .public
           mv .public public
