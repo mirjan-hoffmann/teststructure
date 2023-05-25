@@ -11,3 +11,7 @@ content-files:
   - chapter03.md
   - chapter04.md
   - appendix.md
+reuse_note:
+  generate_license_note: true
+  generate_sources_note: true
+  generate_tullu_tasll_note: true
