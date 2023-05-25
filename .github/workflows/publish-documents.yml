@@ -50,9 +50,8 @@ jobs:
           name: prepared-data
       - run: |
           ls -l
-          chmod +x pandoc-generate.sh
-          ./pandoc-generate.sh
-          rm pandoc-generate.sh
+          chmod +x .pandoc-generate.sh
+          ./.pandoc-generate.sh
           mkdir .public
           cp -r * .public
           mv .public public
